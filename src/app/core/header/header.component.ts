@@ -12,31 +12,9 @@ import {MenuItem} from 'primeng/api';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+
+
   items!: MenuItem[];
-
-<<<<<<< HEAD
-  constructor() {
-
-    this.items = [
-      {
-          label: 'Home',
-          icon: 'pi pi-fw pi-home',
-          url: 'http://www.google.com'
-      },
-      {
-          label: 'Peliculas',
-          icon: 'pi pi-fw pi-video',
-          items: [
-              {label: 'Nueva Pelicula', icon: 'pi pi-fw pi-plus'},
-              {label: 'Listado', icon: 'pi pi-fw pi-list'}
-          ]
-      }
-  ];
-  }
-=======
-  items!: MenuItem[];
->>>>>>> dd54a2e6caf9f931636712229283ba42f9d03852
-
   constructor() {
 
     this.items = [

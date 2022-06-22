@@ -5,10 +5,6 @@ import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from 'primeng/api';
 import {TieredMenuModule} from 'primeng/tieredmenu';
-<<<<<<< HEAD
-
-=======
->>>>>>> dd54a2e6caf9f931636712229283ba42f9d03852
 
 @NgModule({
   declarations: [
@@ -17,11 +13,7 @@ import {TieredMenuModule} from 'primeng/tieredmenu';
 
   ],
   imports: [
-<<<<<<< HEAD
     CommonModule,RouterModule,TieredMenuModule
-=======
-    CommonModule, RouterModule,TieredMenuModule
->>>>>>> dd54a2e6caf9f931636712229283ba42f9d03852
   ],
   exports: [
     HeaderComponent,
