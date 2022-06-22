@@ -16,16 +16,16 @@ export class HeaderComponent implements OnInit {
 
     this.items = [
       {
-          label: 'HOME',
+          label: 'Home',
           icon: 'pi pi-fw pi-home',
           url: 'http://www.google.com'
       },
       {
-          label: 'Edit',
-          icon: 'pi pi-fw pi-pencil',
+          label: 'Peliculas',
+          icon: 'pi pi-fw pi-video',
           items: [
-              {label: 'Delete', icon: 'pi pi-fw pi-trash'},
-              {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
+              {label: 'Nueva Pelicula', icon: 'pi pi-fw pi-plus'},
+              {label: 'Listado', icon: 'pi pi-fw pi-list'}
           ]
       }
   ];
