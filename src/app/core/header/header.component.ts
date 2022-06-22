@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import {MenuItem} from 'primeng/api';
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> dd54a2e6caf9f931636712229283ba42f9d03852
 
 @Component({
   selector: 'app-header',
@@ -9,6 +14,7 @@ import {MenuItem} from 'primeng/api';
 export class HeaderComponent implements OnInit {
   items!: MenuItem[];
 
+<<<<<<< HEAD
   constructor() {
 
     this.items = [
@@ -27,9 +33,32 @@ export class HeaderComponent implements OnInit {
       }
   ];
   }
+=======
+  items!: MenuItem[];
+>>>>>>> dd54a2e6caf9f931636712229283ba42f9d03852
 
-  ngOnInit(): void {
-    // this.primengConfig.ripple = true;
+  constructor() {
+
+    this.items = [
+      {
+          label: 'Home',
+          icon: 'pi pi-fw pi-home',
+          url: 'http://www.google.com'
+      },
+      {
+          label: 'Peliculas',
+          icon: 'pi pi-fw pi-video',
+          items: [
+              {label: 'Nueva Pelicula', icon: 'pi pi-fw pi-plus'},
+              {label: 'Listado', icon: 'pi pi-fw pi-list'}
+          ]
+      }
+  ];
+
+   }
+
+
+  ngOnInit() {
   }
 
 }
