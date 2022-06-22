@@ -34,12 +34,6 @@ export class HeaderComponent implements OnInit {
 
 
   ngOnInit() {
-
-<<<<<<< HEAD
-=======
-  ngOnInit(): void {
-    // this.primengConfig.ripple = true;
->>>>>>> 2ec6409dff1479062b83304fd252a2e6d85f29f4
   }
 
 }
