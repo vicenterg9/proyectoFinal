@@ -1,16 +1,48 @@
-
-
-<body>
+<!-- <body>
   <header>
+    <app-menu></app-menu>
     <app-header></app-header>
-    <button pButton   pRipple type="button" label="Agregar" class="p-button-rounded p-button-"></button>
+
   </header>
   <main>
-    <!-- <app-home-page></app-home-page> -->
-      <router-outlet></router-outlet>
+
+       <router-outlet></router-outlet>
   </main>
   <footer>
     <app-footer></app-footer>
 
   </footer>
-</body>
+</body> -->
+
+
+<p-splitter [style]="{'height': '100%', 'weidht':'100%'}" layout="vertical" [panelSizes]="[100]" [minSizes]="[10,0]" styleClass="mb-3">
+
+  <ng-template pTemplate  [style] ="{'height': '100%'}">
+      <div class="col flex align-items-center justify-content-center">
+        <app-menu></app-menu>
+      </div>
+  </ng-template>
+  <ng-template pTemplate>
+      <p-splitter layout="horizontal" [panelSizes]="[10,90]" [minSizes]="[10,90]" >
+          <ng-template pTemplate>
+              <div class="col flex align-items-center justify-content-center">
+                <app-header></app-header>
+              </div>
+          </ng-template>
+          <ng-template pTemplate>
+              <p-splitter [panelSizes]="[100]">
+                  <ng-template pTemplate>
+                      <div class="col flex align-items-center justify-content-center">
+                          <router-outlet></router-outlet>
+                      </div>
+                  </ng-template>
+              </p-splitter>
+          </ng-template>
+      </p-splitter>
+  </ng-template>
+  <ng-template pTemplate>
+    <div class="col flex align-items-center justify-content-center">
+      <app-footer></app-footer>
+    </div>
+</ng-template>
+</p-splitter>

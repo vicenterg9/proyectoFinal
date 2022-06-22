@@ -5,21 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreModule } from './core/core.module';
-<<<<<<< HEAD
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeModule } from './home/home.module';
+import {PanelModule} from 'primeng/panel';
+import {SplitterModule} from 'primeng/splitter';
 
-=======
-4
->>>>>>> dd54a2e6caf9f931636712229283ba42f9d03852
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
   ],
   imports: [
     BrowserModule,
     CoreModule,
+    HomeModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    PanelModule,
+    SplitterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

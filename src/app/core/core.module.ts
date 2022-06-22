@@ -5,19 +5,26 @@ import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from 'primeng/api';
 import {TieredMenuModule} from 'primeng/tieredmenu';
+import { MenuComponent } from './menu/menu.component';
+import { MenubarModule } from 'primeng/menubar';
+import {  ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
+
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
+    MenuComponent,
 
   ],
   imports: [
-    CommonModule,RouterModule,TieredMenuModule
+    CommonModule,RouterModule,TieredMenuModule,MenubarModule, ButtonModule,InputTextModule
   ],
   exports: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MenuComponent
   ]
 })
 export class CoreModule { }
