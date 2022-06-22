@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ComponentesModule } from '../componentes/componentes.module';
-
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,ComponentesModule
+    CommonModule,RouterModule
   ],
-  exports: [ComponentesModule]
+  exports: []
 })
 export class SharedModule { }
