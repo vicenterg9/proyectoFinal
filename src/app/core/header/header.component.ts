@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
       {
           label: 'Home',
           icon: 'pi pi-fw pi-home',
-          url: '/'
+          routerLink: "/"
       },
       {
           label: 'Peliculas',
@@ -30,12 +30,12 @@ export class HeaderComponent implements OnInit {
       {
         label: 'Registro',
         icon: 'pi pi-fw pi-user',
-        url: ''
+        routerLink: "auth/register"
       },
       {
         label: 'Login',
         icon: 'pi pi-fw pi-sign-in',
-        url: '#'
+        routerLink: "/auth/login"
     },
     ];
   }
