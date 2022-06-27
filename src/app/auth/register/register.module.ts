@@ -9,6 +9,7 @@ import { FormsModule } from "@angular/forms";
 import { PasswordModule } from "primeng/password";
 import { DividerModule } from "primeng/divider";
 import { SharedModule } from 'primeng/api';
+import {CardModule} from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { SharedModule } from 'primeng/api';
   ],
   imports: [
     CommonModule,
-    RegisterRoutingModule,FormsModule,PasswordModule,DividerModule,SharedModule
+    RegisterRoutingModule,FormsModule,PasswordModule,DividerModule,SharedModule,CardModule
   ]
 })
 export class RegisterModule { }

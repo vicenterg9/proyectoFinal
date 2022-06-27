@@ -4,10 +4,11 @@
 
 .main-content {
    margin: auto;
+   min-width: 40%;
 }
 
-body {
+/* body {
   font-family: var(--font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
