@@ -5,6 +5,8 @@ import { NewFilmRoutingModule } from './new-film-routing.module';
 import { NewFilmPage } from './new-film.page';
 import { NewFilmForm } from './new-film.form';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
 
 
 @NgModule({
@@ -14,7 +16,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
   ],
   imports: [
     CommonModule,
-    NewFilmRoutingModule,SharedModule
+    NewFilmRoutingModule,SharedModule,CardModule, ButtonModule
   ]
 })
 export class NewFilmModule { }

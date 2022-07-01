@@ -1,3 +1,32 @@
-<p>new-film works!</p>
+<main>
+  <p-card header="Nueva Pelicula" [style]="{'width': '100%', 'margin-bottom': '2em', 'text-align' :'center','margin-top': '2em'}">
+    <div class="grid p-fluid" >
+      <div class="col-12 xl:col-12 md:col-4 ">
+          <div class="p-inputgroup">
+              <span class="p-inputgroup-addon"><i class="pi pi-video"></i></span>
+              <input type="text" pInputText placeholder="Nombre">
+          </div>
+      </div>
 
-<h1>holaaaaa</h1>
+      <div class="col-12 xl:col-12 md:col-4  ">
+          <div class="p-inputgroup">
+              <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+              <input type="text" pInputText placeholder="Directed by">
+          </div>
+      </div>
+
+      <div class="col-12 xl:col-12 md:col-4 ">
+          <div class="p-inputgroup">
+              <span class="p-inputgroup-addon"><i class="pi pi-calendar"></i></span>
+              <input type="text" pInputText placeholder="Year">
+          </div>
+      </div>
+      <div class="col-12 xl:col-12 md:col-4 ">
+        <div class="p-inputgroup" [style]="{'display':'flow-root'}">
+          <button pButton pRipple label="Registrar" icon="pi pi-save" class="w-full"></button>
+            <!-- <input type="button" pInputText placeholder="Añadir Usuario"> -->
+        </div>
+    </div>
+  </div>
+  </p-card>
+</main>
