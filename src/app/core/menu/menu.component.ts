@@ -12,6 +12,7 @@ export class MenuComponent implements OnInit {
     constructor() {
       this.items = [{
         label: 'All Films Online ',
+        routerLink: '/'
       }
 
       ];
