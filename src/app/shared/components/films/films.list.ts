@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfirmationService } from 'primeng/api';
+import { MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-films-list',
