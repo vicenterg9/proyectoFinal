@@ -1,4 +1,4 @@
-:host ::ng-deep {
+/* :host ::ng-deep {
   .p-paginator {
       .p-paginator-current {
           margin-left: auto;
@@ -49,10 +49,10 @@
       .p-dropdown-label:not(.p-placeholder) {
           text-transform: uppercase;
       }
-  }
+  } */
 
   /* Responsive */
-  .p-datatable-customers .p-datatable-tbody > tr > td .p-column-title {
+  /* .p-datatable-customers .p-datatable-tbody > tr > td .p-column-title {
       display: none;
   }
 }
@@ -95,4 +95,4 @@
       }
   }
 
-}
+} */
