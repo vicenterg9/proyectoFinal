@@ -16,7 +16,8 @@ import { CardModule } from 'primeng/card';
   ],
   imports: [
     CommonModule,
-    NewFilmRoutingModule,SharedModule,CardModule, ButtonModule
+    NewFilmRoutingModule,SharedModule,
+    CardModule, ButtonModule
   ]
 })
 export class NewFilmModule { }

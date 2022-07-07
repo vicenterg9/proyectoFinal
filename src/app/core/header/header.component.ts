@@ -23,7 +23,7 @@ export class HeaderComponent implements OnInit {
           icon: 'pi pi-fw pi-video',
           items: [
               {label: 'Nueva Pelicula', icon: 'pi pi-fw pi-plus', routerLink:'films/new'},
-              {label: 'Listado', icon: 'pi pi-fw pi-list', routerLink:'films/lista'},
+              {label: 'Listado', icon: 'pi pi-fw pi-list', routerLink:'/films'},
               {label: 'Comentarios', icon: 'pi pi-fw pi-pencil', routerLink:'films/comentarios'}
           ]
       },
