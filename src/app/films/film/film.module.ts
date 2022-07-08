@@ -4,6 +4,10 @@ import { CommonModule } from '@angular/common';
 import { FilmRoutingModule } from './film-routing.module';
 import { FilmView } from "./film.view";
 
+import { ChipModule } from 'primeng/chip';
+import { ButtonModule } from 'primeng/button';
+
+
 
 @NgModule({
   declarations: [
@@ -11,7 +15,9 @@ import { FilmView } from "./film.view";
   ],
   imports: [
     CommonModule,
-    FilmRoutingModule
+    FilmRoutingModule,
+    ChipModule,
+    ButtonModule
   ]
 })
 export class FilmModule { }
