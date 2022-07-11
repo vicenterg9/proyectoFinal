@@ -1,0 +1,8 @@
+/* .cargaFilms{
+  width: 50%;
+  flex:none;
+} */
+p-dropdown{
+  width:100% !important;
+  display: grid;
+}

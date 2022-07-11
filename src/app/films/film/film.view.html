@@ -1,4 +1,4 @@
-<!-- <div class="surface-section">
+<div class="surface-section">
   <div class="font-medium text-3xl text-900 mb-3">Movie Information</div>
   <div class="text-500 mb-5">Morbi tristique blandit turpis. In viverra ligula id nulla hendrerit rutrum.</div>
   <ul class="list-none p-0 m-0">
@@ -44,4 +44,18 @@
           </div>
       </li>
   </ul>
-</div> -->
+</div>
+<div class="comentario">
+
+  <button pButton type="button" label="Nuevo Comentario" class="p-button-success" routerLink="new" icon="pi pi-plus" (click)="tocadoClick()" > </button>
+</div>
+<ng-container *ngIf="mostrarFormulario">
+  <app-new-comment-form></app-new-comment-form>
+</ng-container>
+
+
+
+
+<!-- <app-comments-list></app-comments-list> -->
+
+

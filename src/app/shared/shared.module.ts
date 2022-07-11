@@ -12,10 +12,12 @@ import {InputTextModule} from 'primeng/inputtext';
 import { HttpClientModule } from '@angular/common/http';
 import {RatingModule} from 'primeng/rating';
 import { ProductService } from './components/films/productservice';
+import { CommentsList } from './components/comments/comments.list';
 
 @NgModule({
   declarations: [
-    FilmsList
+    FilmsList,
+    CommentsList
   ],
   imports: [
     CommonModule, RouterModule,
@@ -36,7 +38,8 @@ import { ProductService } from './components/films/productservice';
   exports: [
 
     FilmsList,
-    RouterModule
+    RouterModule,
+    CommentsList
   ],
   providers: [ProductService]
 

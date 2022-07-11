@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 import {MenuItem} from 'primeng/api';
 
 @Component({
@@ -10,21 +11,21 @@ export class HeaderComponent implements OnInit {
 
 
   items!: MenuItem[];
-  constructor() {
+  constructor(private router : Router) {
 
     this.items = [
       {
           label: 'Home',
           icon: 'pi pi-fw pi-home',
-          routerLink: "/"
+          // routerLink: "/home",
+          command :(click)=>{this.router.navigate(['/'])}
       },
       {
           label: 'Peliculas',
           icon: 'pi pi-fw pi-video',
           items: [
-              {label: 'Nueva Pelicula', icon: 'pi pi-fw pi-plus', routerLink:'films/new'},
+              {label: 'Nueva Pelicula', icon: 'pi pi-fw pi-plus', routerLink:'/films/new'},
               {label: 'Listado', icon: 'pi pi-fw pi-list', routerLink:'/films'},
-              {label: 'Comentarios', icon: 'pi pi-fw pi-pencil', routerLink:'films/comentarios'}
           ]
       },
       {

@@ -6,6 +6,7 @@ import { FilmView } from "./film.view";
 
 import { ChipModule } from 'primeng/chip';
 import { ButtonModule } from 'primeng/button';
+import { NewCommentModule } from 'src/app/comments/new-comment/new-comment.module';
 
 
 
@@ -17,7 +18,8 @@ import { ButtonModule } from 'primeng/button';
     CommonModule,
     FilmRoutingModule,
     ChipModule,
-    ButtonModule
+    ButtonModule,
+    NewCommentModule
   ]
 })
 export class FilmModule { }

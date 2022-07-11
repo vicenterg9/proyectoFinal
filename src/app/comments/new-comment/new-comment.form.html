@@ -1,0 +1,36 @@
+<main>
+  <p-card header="Nuevo Comentario" [style]="{'width': '100%', 'margin-bottom': '2em', 'text-align' :'center','margin-top': '2em'}">
+    <div class="grid p-fluid" >
+      <div class="col-12 xl:col-12 md:col-4 ">
+          <div class="p-inputgroup">
+              <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+              <input type="text" pInputText placeholder="Name">
+          </div>
+      </div>
+
+      <div class="col-12 xl:col-12 md:col-4 ">
+        <div class="p-inputgroup">
+            <span class="p-inputgroup-addon"><i class="pi pi-at"></i></span>
+            <input type="text" pInputText placeholder="Email">
+        </div>
+    </div>
+
+      <div class="col-12 xl:col-12 md:col-4  ">
+          <div class="p-inputgroup">
+            <span class="p-float-label">
+              <textarea id="float-input" rows="5" cols="30" pInputTextarea></textarea>
+              <label for="float-input">Write your comment</label>
+          </span>
+          </div>
+      </div>
+
+
+      <div class="col-12 xl:col-12 md:col-4 ">
+        <div class="p-inputgroup" [style]="{'display':'flow-root'}">
+          <button pButton pRipple label="Registrar" icon="pi pi-check" class="w-full"></button>
+            <!-- <input type="button" pInputText placeholder="Añadir Usuario"> -->
+        </div>
+    </div>
+  </div>
+  </p-card>
+</main>
