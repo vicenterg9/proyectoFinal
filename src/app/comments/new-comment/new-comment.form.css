@@ -2,7 +2,10 @@
   width: 50%;
   flex:none;
 } */
+input{
+  width: 40%;
+}
 p-dropdown{
-  width:100% !important;
+  width:90% !important;
   display: grid;
 }

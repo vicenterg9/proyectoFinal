@@ -9,8 +9,11 @@ import { FormsModule } from "@angular/forms";
 import { PasswordModule } from "primeng/password";
 import { DividerModule } from "primeng/divider";
 import { SharedModule } from 'primeng/api';
-import {CardModule} from 'primeng/card';
+import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
+
+import { MessagesModule } from 'primeng/messages';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,7 @@ import { ButtonModule } from 'primeng/button';
   ],
   imports: [
     CommonModule,
-    RegisterRoutingModule,FormsModule,PasswordModule,DividerModule,SharedModule,CardModule, ButtonModule
+    RegisterRoutingModule,FormsModule,PasswordModule,DividerModule,SharedModule,CardModule, ButtonModule,ConfirmDialogModule,MessagesModule
   ]
 })
 export class RegisterModule { }

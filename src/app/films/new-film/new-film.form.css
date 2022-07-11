@@ -1,8 +1,9 @@
-input{
-  width: 100%;
+input, textarea, button{
+  width: 90%;
+  align-content: center;
 
 }
-.p-inputgroup {
+/* .p-inputgroup {
   margin-top: 12px;
   margin-bottom: 12px;
-}
+} */
