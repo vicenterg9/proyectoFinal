@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Route, Router } from '@angular/router';
 import { Product } from './products';
 import { ProductService } from './productservice';
 
@@ -20,7 +21,7 @@ export class FilmsList implements OnInit {
 
   submitted! : boolean;
 
-  constructor(private  productService:ProductService) { }
+  constructor(private  productService:ProductService, private route : Router) { }
 
   ngOnInit(): void {
     this.productService.getProducts().then(data => this.products = data);
@@ -45,10 +46,9 @@ export class FilmsList implements OnInit {
 //     });
 // }
 
-// editProduct(product: Product) {
-//     this.product = {...product};
-//     this.productDialog = true;
-// }
+editProduct() {
+  this.route.navigate(["films/:id"]);
+}
 
 // deleteProduct(product: Product) {
 //     this.confirmationService.confirm({
