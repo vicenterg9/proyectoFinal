@@ -17,8 +17,8 @@ export class HeaderComponent implements OnInit {
       {
           label: 'Home',
           icon: 'pi pi-fw pi-home',
-          // routerLink: "/home",
-          command :(click)=>{this.router.navigate(['/'])}
+          routerLink: "/",
+          // command :(click)=>{this.router.navigate(['/'])}
       },
       {
           label: 'Peliculas',

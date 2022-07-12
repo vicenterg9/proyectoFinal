@@ -7,7 +7,9 @@ import { NewFilmForm } from './new-film.form';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
 
+import { MessagesModule } from 'primeng/messages';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,7 @@ import { CardModule } from 'primeng/card';
   imports: [
     CommonModule,
     NewFilmRoutingModule,SharedModule,
-    CardModule, ButtonModule
+    CardModule, ButtonModule,ConfirmDialogModule,MessagesModule
   ]
 })
 export class NewFilmModule { }

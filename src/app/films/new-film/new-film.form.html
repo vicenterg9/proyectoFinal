@@ -48,10 +48,12 @@
 
       <div class="col-12 xl:col-12 md:col-4 ">
         <div class="p-inputgroup" >
-          <button pButton pRipple label="Registrar" icon="pi pi-save" class="w-full"></button>
+          <button (click)="confirm()" pButton pRipple label="Registrar" icon="pi pi-save" class="w-full" [style]="{width: '50vw'}"></button>
             <!-- <input type="button" pInputText placeholder="Añadir Usuario"> -->
-        </div>
+
+          </div>
     </div>
   </div>
   </p-card>
 </main>
+<p-confirmDialog header="Confirmation" icon="pi pi-exclamation-triangle"></p-confirmDialog>
