@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'proyectoFinal';
+ homePage!: boolean;
+
+  constructor(){
+
+  }
+
+  tocadoClick(){
+    if (this.homePage){
+      this.homePage = false;
+    }else{
+      this.homePage = true;
+
+    }
+  }
 }

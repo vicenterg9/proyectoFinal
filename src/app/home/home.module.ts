@@ -2,14 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomePage } from './home.page';
 import { SharedModule } from '../shared/shared.module';
-import { GalleriaModule } from "primeng/galleria"
+import { HomeRoutingModule } from './home-routing.module';
 
 
 @NgModule({
   declarations: [HomePage],
   imports: [
-    CommonModule,SharedModule, GalleriaModule
+    CommonModule,SharedModule, HomeRoutingModule
   ],
-  exports:[HomePage]
+  exports:[HomePage],
+
 })
 export class HomeModule { }
